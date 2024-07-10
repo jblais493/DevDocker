@@ -1,0 +1,10 @@
+version: '3'
+services:
+  dev:
+    build: .
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
+    volumes:
+      - .:/workspace
+    tty: true
